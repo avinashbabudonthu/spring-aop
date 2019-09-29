@@ -12,6 +12,8 @@
 		<config>src/main/resources/after.throwing/applicationContext.xml</config>
 		<config>src/main/resources/afterreturn.aspect/applicationContext.xml</config>
 		<config>src/main/resources/around.aspect/applicationContext.xml</config>
+		<config>src/main/resources/method.level.annotation.aspect/applicationContext.xml</config>
+		<config>src/main/resources/pointcut.annotation/applicationContext.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

@@ -65,8 +65,8 @@ gradle init --type pom
 * Integration test - **src/test/java/after.aspect.IntegrationTest**
 
 ### AfterThrowing Aspect - after.throwing
-* Create AfterThrowing aspect - **AfterThrowingAfterJoinPoint**
-* Aspect method parameter name and @AfterThrowing annotation's **throwing** attribute value should be same
+* Create AfterThrowing aspect - **AfterThrowingAspectJoinPoint**
+* **Aspect method parameter name** and @AfterThrowing annotation's **throwing** attribute value should be same
 * Throw **RuntimeException** from **StudentRepository**
 * Main class - **after.throwing.App**
 * Integration test class - **src/test/java/after.throwing.IntegrationTest**
@@ -82,6 +82,21 @@ gradle init --type pom
 * Create around aspect - **AroundAspect**
 * Main class - **around.aspect.App**
 * Integration test class - **src/test/java/around.aspect.IntegrationTest**
+
+### Method level Annotation aspect - method.level.annotation.aspect
+* Aspect to executes before method with method level annotation - **TestAnnotation**
+* Create around aspect - **MethodLevelAnnotationAspect**
+* Main class - **method.level.annotation.aspect.App**
+* Integration test class - **src/test/java/method.level.annotation.aspect.IntegrationTest**
+
+### Reuse point cut expressions - pointcut.annotation
+* Reuse point cut expression using **@Pointcut** annotation
+* Define class - **AppPointCuts**
+* Define method - **AppPointCuts.testAnnotationPointcut**
+* Declare **@Pointcut** annotation on method
+* Declare point cut method with advice - **MethodLevelAnnotationAspect**
+* Main class - **pointcut.annotation.App**
+* Integration test - **pointcut.annotation.IntegrationTest**
 
 ## Run this project
 * Import project into IDE as Maven or Gradle project
