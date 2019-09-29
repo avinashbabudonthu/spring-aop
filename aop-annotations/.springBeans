@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.2.201712210913-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/before.aspect/applicationContext.xml</config>
+		<config>src/main/resources/after.aspect/applicationContext.xml</config>
+		<config>src/main/resources/after.throwing/applicationContext.xml</config>
+		<config>src/main/resources/afterreturn.aspect/applicationContext.xml</config>
+		<config>src/main/resources/around.aspect/applicationContext.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
