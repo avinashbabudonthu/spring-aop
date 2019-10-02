@@ -11,6 +11,10 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class AfterReturningAspect {
 
+	/**
+	 * returning = "studentName" should be same as entering(..) method parameter name
+	 * @param studentName
+	 */
 	@AfterReturning(pointcut = "execution(* *(..))", returning = "studentName")
 	public void entering(String studentName) {
 		log.info("student-name={}", studentName);

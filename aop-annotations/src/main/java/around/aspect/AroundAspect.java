@@ -18,7 +18,7 @@ public class AroundAspect {
 	 * @throws Throwable 
 	 */
 	@Around("execution(* *(..))")
-	public Object runtTimeException(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+	public Object aroundAspect(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
 		final String className = proceedingJoinPoint.getTarget().getClass().getName();
 		final String methodName = proceedingJoinPoint.getSignature().getName();
 		log.info("around aspect - before method call - {}.{}", className, methodName);

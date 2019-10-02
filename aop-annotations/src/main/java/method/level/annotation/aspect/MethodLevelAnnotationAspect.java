@@ -17,7 +17,7 @@ public class MethodLevelAnnotationAspect {
 	 * 2. any class
 	 * 3. any method name
 	 * 4. any number of parameters of any return type
-	 * 5. before method annotated with {@link TestAnnotation}
+	 * 5. method annotated with {@link TestAnnotation}
 	 * 
 	 * @param joinPoint
 	 * @return

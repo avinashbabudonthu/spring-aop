@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 public class AfterThrowingAspectJoinPoint {
 
 	/**
-	 * throwing="ex" - ex should be same parameter name "ex"
+	 * throwing="ex" - ex should be same as parameter name "ex"
 	 * @param ex
 	 */
 	@AfterThrowing(pointcut = "execution(* *(..))", throwing = "ex")
