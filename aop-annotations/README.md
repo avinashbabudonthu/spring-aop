@@ -62,7 +62,7 @@ gradle init --type pom
 * Execute **joinpoint.before.aspect.App** - we will see 2 logs printed in console
 * Integration test - **src/test/java/joinpoint.before.aspect.IntegrationTest**
 
-### After Aspect with JoinPoint
+## After Aspect with JoinPoint
 * Package **after.aspect**
 * Create After aspect which executes after **findStudent()** method
 * **findStudent()** method present in **StudentRepository**, **StudentService**
@@ -77,7 +77,7 @@ gradle init --type pom
 * Execute **after.aspect.App**
 * Integration test - **src/test/java/after.aspect.IntegrationTest**
 
-### AfterThrowing Aspect
+## AfterThrowing Aspect
 * Package **after.throwing**
 * Create AfterThrowing aspect - **AfterThrowingAspectJoinPoint**
 * **Aspect method parameter name** and @AfterThrowing annotation's **throwing** attribute value should be same
@@ -85,7 +85,7 @@ gradle init --type pom
 * Main class - **after.throwing.App**
 * Integration test class - **src/test/java/after.throwing.IntegrationTest**
 
-### AfterReturning Aspect
+## AfterReturning Aspect
 * Package **afterreturn.aspect**
 * Create AfterReturningAspect asect - **AfterReturningAspect**
 * Aspect method parameter name and @AfterRetrurning annotation's **returning** attribute value should be same
@@ -93,20 +93,20 @@ gradle init --type pom
 * Main class - **afterreturn.aspect.App**
 * Integration test class - **src/test/java/afterreturn.aspect.IntegrationTest**
 
-### Around Aspect
+## Around Aspect
 * Package - **around.aspect**
 * Create around aspect - **AroundAspect**
 * Main class - **around.aspect.App**
 * Integration test class - **src/test/java/around.aspect.IntegrationTest**
 
-### Method level Annotation aspect
+## Method level Annotation aspect
 * Package - **method.level.annotation.aspect**
 * Aspect to executes before method with method level annotation - **TestAnnotation**
 * Create around aspect - **MethodLevelAnnotationAspect**
 * Main class - **method.level.annotation.aspect.App**
 * Integration test class - **src/test/java/method.level.annotation.aspect.IntegrationTest**
 
-### Reuse point cut expressions
+## Reuse point cut expressions
 * Package - **pointcut.annotation**
 * Reuse point cut expression using **@Pointcut** annotation
 * Define class - **AppPointCuts**

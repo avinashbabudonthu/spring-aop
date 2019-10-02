@@ -28,6 +28,8 @@ public class MethodLevelAnnotationAspect {
 		final String className = joinPoint.getTarget().getClass().getName();
 		final String methodName = joinPoint.getSignature().getName();
 		log.info("executing class={}, method={}", className, methodName);
-		return joinPoint.proceed();
+		Object result = joinPoint.proceed();
+		log.info("executed class={}, method={}", className, methodName);
+		return result;
 	}
 }
