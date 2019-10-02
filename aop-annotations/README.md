@@ -26,9 +26,12 @@ gradle init --type pom
 * org.aspectj:aspectjtools:1.9.4
 
 ## Examples
-### [Before Aspect](#before-aspect)
+* [Before Aspect](#before-aspect)
+* [Before Aspect with JoinPoint](#before-aspect-with-joinpoint)
 
-### Before aspect
+
+## Before aspect
+* package - **before.aspect**
 * Create Before aspect which executes before **findStudent()** method
 * **findStudent()** method present in **StudentRepository**, **StudentService**
 * Create aspect **LoggingAspect** with **@Before** annotation
@@ -41,7 +44,8 @@ gradle init --type pom
 * Problem in this example is - we don't know **class**, **method** names for which aspect executed
 * We can get class, method names using **JoinPoint**. Refer - **before.aspect.joinpoint**
 
-### Before Aspect with JoinPoint - joinpoint.before.aspect
+## Before Aspect with JoinPoint
+* package **joinpoint.before.aspect**
 * Create Before aspect which executes before **findStudent()** method
 * **findStudent()** method present in **StudentRepository**, **StudentService**
 * Create aspect **LoggingAspectJoinPoint** with **@Before** annotation
