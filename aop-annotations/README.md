@@ -30,7 +30,7 @@ gradle init --type pom
 * [Before Aspect with JoinPoint](#before-aspect-with-joinpoint)
 * [After Aspect with JoinPoint](#after-aspect-with-joinpoint)
 * [AfterThrowing Aspect](#afterthrowing-aspect)
-* [AfterReturning Aspect)(#afterreturning-aspect)
+* [AfterReturning Aspect](#afterreturning-aspect)
 * [Around Aspect](#around-aspect)
 * [Method level Annotation Aspect](#method-level-annotation-aspect)
 * [Reuse point cut expressions](#reuse-point-cut-expressions)
