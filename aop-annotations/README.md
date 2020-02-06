@@ -10,21 +10,6 @@ mvn archetype:generate -DgroupId=aop.annotations -DartifactId=aop-annotations -D
 gradle init --type pom
 ```
 
-## Versions
-* Maven **3.5.2**
-* Gradle **5.0**
-
-## Dependencies
-* junit:junit:4.12
-* org.projectlombok:lombok:1.18.8
-* org.slf4j:slf4j-api:1.7.28
-* org.slf4j:slf4j-log4j12:1.7.28
-* org.springframework:spring-core:5.1.9.RELEASE
-* org.springframework:spring-context:5.1.9.RELEASE
-* org.springframework:spring-test:5.1.9.RELEASE
-* org.springframework:spring-aop:5.1.9.RELEASE
-* org.aspectj:aspectjtools:1.9.4
-
 ## Examples
 * [Before Aspect](#before-aspect)
 * [Before Aspect with JoinPoint](#before-aspect-with-joinpoint)
